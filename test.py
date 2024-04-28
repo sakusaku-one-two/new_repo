@@ -31,5 +31,14 @@ gen.__next__()
 
 for sub in gen:
     sub.show()
+
+
+try:
+    next = gen.__next__()
+except :
+    pass
+finally :
+    print(next)
+    
     
     
